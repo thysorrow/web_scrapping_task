@@ -1,6 +1,7 @@
-from lxml import html
 import re
 from urllib.parse import urljoin
+
+from lxml import html
 
 
 def extract_links(html_string: str, base_url: str) -> list[dict]:
@@ -32,3 +33,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
